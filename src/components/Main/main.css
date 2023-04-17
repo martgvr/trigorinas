@@ -1,0 +1,35 @@
+.Main {
+    background: url('https://wallpapercave.com/wp/wp2003923.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(121, 112, 112);
+    height: 110vh;
+}
+
+.shape-divider {
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.shape-divider svg {
+    position: relative;
+    display: block;
+    width: calc(132% + 1.3px);
+    height: 164px;
+}
+
+.shape-divider .shape-fill {
+    fill: #FFFFFF;
+}
+
+.main__container {
+    height: calc(100% - 150px);
+    justify-content: center;
+    align-items: center;
+}

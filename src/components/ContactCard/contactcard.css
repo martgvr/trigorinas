@@ -1,0 +1,16 @@
+.ContactCard {
+    height: 100px;
+    width: 450px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    gap: 30px;
+    align-items: center;
+    color: white;
+}
+
+.ContactCard img {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+}

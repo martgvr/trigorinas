@@ -1,0 +1,17 @@
+.Footer {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.footer__divider {
+    height: 20px;
+    background-color: rgb(34, 31, 27);
+}
+
+.footer__content {
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    color: rgb(200, 200, 200);
+}

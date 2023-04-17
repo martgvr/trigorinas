@@ -7,8 +7,8 @@ function Header() {
         <div className='Header__gradient'></div>
         <ul className='flex-row'>
             <li className='menu__item active'>Home</li>
-            <li className='menu__item'>Productos</li>
-            <li className='menu__item'>Contactanos</li>
+            <li className='menu__item'><a href="#products">Productos</a></li>
+            <li className='menu__item'><a href="#contact">Contactanos</a></li>
         </ul>
     </div>
   )

@@ -1,0 +1,30 @@
+.Contact {
+    margin-top: 30px;
+    /* background-color: rgb(109, 101, 86); */
+    background-color: rgb(48, 44, 38);
+}
+
+.contact__divider {
+    background-color: rgb(216, 207, 124);
+    height: 30px;
+}
+
+.contact__content {
+    align-items: center;
+    padding: 120px 80px;
+    height: 100%;
+    gap: 40px;
+}
+
+.contact__content h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.4em;
+    color: white;
+}
+
+.contact__cards--container {
+    height: 100%;
+    width: 100%;
+    gap: 60px;
+    justify-content: center;
+}

@@ -6,9 +6,9 @@ function Header() {
     <div className='Header flex-row'>
         <div className='Header__gradient'></div>
         <ul className='flex-row'>
-            <li>Home</li>
-            <li>Productos</li>
-            <li>Contactanos</li>
+            <li className='menu__item active'>Home</li>
+            <li className='menu__item'>Productos</li>
+            <li className='menu__item'>Contactanos</li>
         </ul>
     </div>
   )

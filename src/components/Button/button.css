@@ -1,0 +1,15 @@
+.Button {
+    box-shadow: rgba(216, 207, 124, 0.2) 0px 0px 38px, rgba(0, 0, 0, 0.4) 0px 20px 50px;
+    background-color: rgb(216, 207, 124);
+    border-radius: 20px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #000;
+    z-index: 1;
+}
+
+.Button:hover { 
+    box-shadow: rgba(216, 207, 124, 0.4) 0px 0px 38px, rgba(0, 0, 0, 0.4) 0px 20px 50px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}

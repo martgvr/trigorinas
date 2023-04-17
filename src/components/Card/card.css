@@ -1,0 +1,22 @@
+.Card {
+    background-color: rgb(252, 242, 195);
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    height: 350px;
+    width: 300px;
+    gap: 20px;
+}
+
+.card__text {
+    color: rgb(0, 0, 0);
+    font-size: 1.4em;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.card__image {
+    width: 100%;
+    height: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

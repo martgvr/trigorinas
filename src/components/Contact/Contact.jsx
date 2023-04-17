@@ -1,13 +1,19 @@
 import './contact.css'
-import React, { useEffect } from 'react'
-import ContactCard from '../ContactCard/ContactCard'
+import React, { useEffect, useState } from 'react'
+import { getData } from "../../services/firebase.service"
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
+import Loading from '../Loading/Loading'
+import ContactCard from '../ContactCard/ContactCard'
+
 function Contact() {
+  const [data, setData] = useState(null)
+
   useEffect(() => {
-    AOS.init();
+    AOS.init()
+    getData("contact").then((res) => setData(res))
   }, [])
 
   return (
@@ -16,9 +22,12 @@ function Contact() {
         <div className='contact__content flex-column' data-aos="zoom-in">
             <h1>Contactanos</h1>
             <div className='contact__cards--container flex-row'>
-                <ContactCard name={'Ubicación'} description={'Ramos Mejía, Buenos Aires'} image={'https://cdn-icons-png.flaticon.com/512/2838/2838912.png'}/>
-                <ContactCard name={'Instagram'} description={'https://www.instagram.com/trigorinas/'} image={'https://pixlok.com/wp-content/uploads/2021/07/Instagram-Free-Icon-rdfd.png'}/>
-                <ContactCard name={'Whatsapp'} description={'15 1234 5678'} image={'https://cdn-icons-png.flaticon.com/512/597/597359.png'}/>
+              {
+                data === null ?
+                  <Loading text={'Cargando información de contacto'} txtColor={'#fff'} />
+                  : 
+                  data.map(item => <ContactCard name={item.name} description={item.description} image={item.image} link={item.link} />)
+              }
             </div>
         </div>
     </div>

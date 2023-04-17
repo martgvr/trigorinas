@@ -1,15 +1,20 @@
 import React from 'react'
 import './contactcard.css'
 
-function ContactCard({ name, image, description }) {
+function ContactCard({ name, image, description, link }) {
+  console.log(link);
+
   return (
-    <div className='ContactCard flex-row'>
-        <img src={image} alt="" />
-        <div>
-            <p>{name}</p>
-            <p>{description}</p>
-        </div>
-    </div>
+    <a href={link}>
+
+      <div className='ContactCard flex-row'>
+          <img src={image} alt="" />
+          <div>
+              <p>{name}</p>
+              <p>{description}</p>
+          </div>
+      </div>
+    </a>
   )
 }
 

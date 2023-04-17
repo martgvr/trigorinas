@@ -2,6 +2,7 @@ import React from 'react'
 import './productscard.css'
 
 function ProductsCard({ name, image, price }) {
+
 	const imageStyle = {
 		background: `url(${image})`,
 		backgroundPosition: "center center",

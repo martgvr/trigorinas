@@ -14,3 +14,14 @@
     height: 50px;
     filter: invert(1);
 }
+
+.ContactCard:hover {
+    background-color: rgb(216, 207, 124);
+    border: 2px solid rgb(216, 207, 124);
+    color: black;
+    cursor: pointer;
+}
+
+.ContactCard:hover > img {
+    filter: invert(0);
+}

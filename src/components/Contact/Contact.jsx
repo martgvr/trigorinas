@@ -1,12 +1,19 @@
-import React from 'react'
 import './contact.css'
+import React, { useEffect } from 'react'
 import ContactCard from '../ContactCard/ContactCard'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 function Contact() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <div className='Contact flex-column' id='contact'>
         <div className='contact__divider'></div>
-        <div className='contact__content flex-column'>
+        <div className='contact__content flex-column' data-aos="zoom-in">
             <h1>Contactanos</h1>
             <div className='contact__cards--container flex-row'>
                 <ContactCard name={'Ubicación'} description={'Ramos Mejía, Buenos Aires'} image={'https://cdn-icons-png.flaticon.com/512/2838/2838912.png'}/>

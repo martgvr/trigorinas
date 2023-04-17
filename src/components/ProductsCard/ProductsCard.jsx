@@ -1,7 +1,7 @@
-import React from "react"
-import "./card.css"
+import React from 'react'
+import './productscard.css'
 
-function Card({ name, image, price }) {
+function ProductsCard({ name, image, price }) {
 	const imageStyle = {
 		background: `url(${image})`,
 		backgroundPosition: "center center",
@@ -10,7 +10,7 @@ function Card({ name, image, price }) {
 	}
 
 	return (
-		<div className="Card flex-column">
+		<div className="ProductsCard flex-column">
 			<div className="card__image" style={imageStyle}></div>
             <div className="card__text flex-column">
 			    <p>{name}</p>
@@ -20,4 +20,4 @@ function Card({ name, image, price }) {
 	)
 }
 
-export default Card
+export default ProductsCard

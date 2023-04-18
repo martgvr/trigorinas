@@ -50,3 +50,9 @@
     left: 0;
     top: 0;
 }
+
+@media (max-width: 1000px) {
+    .Header ul {
+        gap: 30px;
+    }
+}

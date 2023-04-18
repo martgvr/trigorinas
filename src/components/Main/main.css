@@ -34,6 +34,7 @@
     font-size: 2em;
     font-family: 'Quicksand', sans-serif;
     text-shadow: 0 0 20px #000000, 0 0 20px #c4b743;
+    text-align: center;
 }
 
 .main__text p {
@@ -70,4 +71,11 @@
 }
 .shape-divider-white path {
     fill: #FFFFFF;
+}
+
+@media (max-width: 500px) {
+    .main__text {
+        margin-bottom: 60px;
+        gap: 20px;
+    }
 }

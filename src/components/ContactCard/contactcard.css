@@ -15,6 +15,11 @@
     filter: invert(1);
 }
 
+.ContactCard div p:first-of-type {
+    color: rgb(180, 180, 180);
+    margin-bottom: 2px;
+}
+
 .ContactCard:hover {
     background-color: rgb(216, 207, 124);
     border: 2px solid rgb(216, 207, 124);
@@ -22,6 +27,17 @@
     cursor: pointer;
 }
 
+.ContactCard:hover > div p:first-of-type {
+    color: black;
+}
+
 .ContactCard:hover > img {
     filter: invert(0);
+}
+
+@media (max-width: 1200px) {
+    .ContactCard {
+        font-size: 0.8em;
+        width: 380px;
+    }
 }

@@ -78,4 +78,20 @@
         margin-bottom: 60px;
         gap: 20px;
     }
+
+    .main__top img {
+        width: 200px;
+    }
+
+    .shape-divider {
+        bottom: -23.5%;
+    }
+
+    .main__text {
+        font-size: 1.8em;
+    }
+
+    .main__container {
+        justify-content: center;
+    }
 }

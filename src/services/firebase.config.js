@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app"
 import { getAuth } from "firebase/auth"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAsBY50tJ0nZXqXDEwYhjoWq-wwwtW72nU",
-    authDomain: "trigorinas.firebaseapp.com",
-    projectId: "trigorinas",
-    storageBucket: "trigorinas.appspot.com",
-    messagingSenderId: "403531199927",
-    appId: "1:403531199927:web:4b63d8e409ba7d11352432"  
+    apiKey: "AIzaSyAAgnp3erlsclKusYMjtuVZYXgnj_UQlqQ",
+    authDomain: "trigorinas-dee41.firebaseapp.com",
+    projectId: "trigorinas-dee41",
+    storageBucket: "trigorinas-dee41.appspot.com",
+    messagingSenderId: "930470692116",
+    appId: "1:930470692116:web:eeb58755da6b351243ee01"
 }
 
 export const app = initializeApp(firebaseConfig)

@@ -8,6 +8,7 @@
 }
 
 .main__container {
+    position: relative;
     align-items: center;
     justify-content: space-between;
     padding: 100px 0;
@@ -43,7 +44,7 @@
 
 .shape-divider {
     position: absolute;
-    bottom: -15%;
+    bottom: -140px;
     width: 100%;
     left: 0;
     z-index: 1;
@@ -69,6 +70,7 @@
 .shape-divider-yellow path {
     fill: rgb(216, 207, 124);
 }
+
 .shape-divider-white path {
     fill: #FFFFFF;
 }
@@ -79,19 +81,15 @@
         gap: 20px;
     }
 
-    .main__top img {
-        width: 200px;
-    }
+    .main__top img {  width: 200px; }
+    .main__text { font-size: 1.8em; }
+    .main__container { justify-content: center; }
 
-    .shape-divider {
-        bottom: -23.5%;
+    .shape-divider-white {
+        height: 110px;
     }
-
-    .main__text {
-        font-size: 1.8em;
-    }
-
-    .main__container {
-        justify-content: center;
+    
+    .shape-divider-yellow {
+        height: 160px;
     }
 }

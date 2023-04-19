@@ -1,5 +1,5 @@
-import { auth, app } from "../services/firebase.config.js"
-import { getFirestore, collection, query, where, doc, addDoc, getDocs, deleteDoc, updateDoc } from "firebase/firestore"
+import { app } from "../services/firebase.config.js"
+import { getFirestore, collection, query, where, getDocs } from "firebase/firestore"
 
 const firestoreDB = getFirestore(app)
 

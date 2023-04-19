@@ -1,5 +1,5 @@
-import React from 'react'
 import './productscard.css'
+import React from 'react'
 
 function ProductsCard({ name, image, price }) {
 

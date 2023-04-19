@@ -1,9 +1,7 @@
-import React from 'react'
 import './contactcard.css'
+import React from 'react'
 
 function ContactCard({ name, image, description, link }) {
-  console.log(link);
-
   return (
     <a href={link}>
 
